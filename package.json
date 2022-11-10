@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "next-seo": "^5.14.0",
+    "nprogress": "^0.2.0"
+  }
+}

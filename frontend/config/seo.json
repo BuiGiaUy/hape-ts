@@ -1,0 +1,21 @@
+{
+    "title": "Hape.vn | Thực phẩm hữu cơ, rau củ tươi ngon, đồ tiêu dùng, mỹ phẩm.",
+    "titleTemplate": "%s - Hape.vn",
+    "description": "Hape mang đến thực phẩm thực phẩm chay & hữu cơ từ nông trại tới người dùng, hàng chất lượng tốt nhất và luôn giá có tốt nhất.",
+    "openGraph": {
+      "title": "Hape.vn | Thực phẩm hữu cơ, rau củ tươi ngon, đồ tiêu dùng, mỹ phẩm.",
+      "description": "Hape mang đến thực phẩm thực phẩm chay & hữu cơ từ nông trại tới người dùng, hàng chất lượng tốt nhất và luôn giá có tốt nhất.",
+      "type": "website",
+      "locale": "vn_VI",
+      "url": "https://www.hape.vn",
+      "site_name": "Hape.vn",
+      "images": [
+        {
+          "url": "/assets/logo_hape.png",
+          "width": 1000,
+          "height": 1000,
+          "alt": "Hape.vn"
+        }
+      ]
+    }
+}
