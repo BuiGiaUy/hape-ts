@@ -1,0 +1,28 @@
+.root{
+    height: 47px!important;
+    background: hsla(0,0%,100%,.9);
+    @apply fixed w-full top-0 transition-all 
+}
+
+.logo {
+    width: 120px;
+    @apply mt-2 inline-block transform cursor-pointer 
+}
+
+.link {
+    font-size: 13px;
+    @apply inline-flex cursor-pointer px-1 font-semibold leading-6 items-center transition text-gray-900 
+}
+.link_last {
+
+    font-size: 13px;
+    @apply inline-flex cursor-pointer px-1 font-semibold leading-6 items-center transition text-gray-900 
+
+}
+
+.link:hover {
+    @apply text-accents-9
+}
+.link:focus {
+    @apply outline-none text-accents-8
+}

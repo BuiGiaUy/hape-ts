@@ -1,7 +1,7 @@
 import React, { FC } from "react";
 import IProduct from "./../../interfaces/product";
 import Link from "next/link";
-import { currencyFormat, filterChar } from '../../../lib/hooks/product';
+import { currencyFormat, filterChar } from '../../../lib/product';
 
 interface Props {
   product: IProduct;

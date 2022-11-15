@@ -1,4 +1,5 @@
 import "antd/dist/antd.css";
+import '../assets/main.scss'
 import axios from "axios";
 import { AuthProvider } from "../context/AuthContext";
 import {loadProgressBar} from "axios-progress-bar"

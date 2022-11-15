@@ -1,0 +1,26 @@
+.searchInputBox {
+    height: 31px;
+    margin-top: 6px;
+    border-radius: 3px;
+    background-color: #f0f0F0;
+
+    @apply relative
+    
+}
+
+.searchInput {
+    padding: 5px 10px;
+    font-size: 13px;
+    @apply w-full bg-transparent border-none
+}
+
+.searchInputBox svg {
+    margin-top: 5px;
+    width: 20px;
+    height: 20px;
+    fill: #666;
+}
+
+.searchInputBox button {
+    @apply w-full h-full border-none
+}

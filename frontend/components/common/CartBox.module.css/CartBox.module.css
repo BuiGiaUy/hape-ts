@@ -1,0 +1,53 @@
+
+.cart{
+    
+    @apply ml-0 md:ml-8 inline-block relative cursor-pointer mr-5
+}
+
+.cart svg{
+    width: 25px;
+    height: 25px;
+    transition: fill 275ms ease;
+    fill: var(--main-color);
+    @apply inline-block ml-4 mt-2
+}
+.shop{
+    @apply ml-8 mt-2 hidden md:inline-block
+
+}
+.shop svg{
+    width: 27px;
+    height: 27px;
+
+    transition: fill 275ms ease;
+    fill: #555;
+    @apply inline-block cursor-pointer
+}
+.cart label{
+    background: var(--main-color);
+    text-align: center;
+    display: inline-block;
+    width: 20px;
+    min-height: 20px;
+    padding: 1px 0 0 0;
+    font-size: 12px;
+    border-radius: 50%;
+    left: 33px;
+    @apply shadow absolute  font-bold text-white cursor-pointer
+}
+.cart button:hover svg{
+    fill: #000;
+}
+.cart input{
+    text-align: center;
+    font-size: 15px;
+    padding: 2px;
+    width: 50px;
+    border:none;
+    box-shadow: none;
+    border-left: 1px solid #f2f2f2;
+    border-right: 1px solid #f2f2f2;
+    height: 40px;
+    vertical-align: top;
+    @apply inline-block
+}

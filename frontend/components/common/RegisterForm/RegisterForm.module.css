@@ -1,0 +1,10 @@
+.signUpButton {
+    transition: border-color .3s ease;
+    margin-left: 12px;
+    margin-top: 6px;
+
+    @apply mt-1 w-12 md:w-auto text-xs rounded-2xl md:px-4 py-2 font-bold hidden md:inline-block border-none bg-transparent
+}
+.signUpButton:hover {
+    @apply bg-gray-100 
+}

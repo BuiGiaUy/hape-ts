@@ -1,0 +1,229 @@
+
+.button {
+    display: inline-block;
+    padding: 10px 40px;
+    background: var(--main-color);
+}
+.button:hover{
+
+   color: #fff;
+}
+
+.arrow {
+    color: #fff;
+}
+
+.arrow::after {
+    display: inline-block;
+    padding-left: 8px;
+    content: "\0279E";
+    -webkit-transition: transform 0.1s ease-out;
+    -moz-transition: transform 0.1s ease-out;
+    -ms-transition: transform 0.1s ease-out;
+    -o-transition: transform 0.1s ease-out;
+    transition: transform 0.1s ease-out;
+}
+
+.arrow:hover {
+    color: #fff;
+}
+
+.arrow:hover::after {
+    -webkit-transform: translateX(6px);
+    -moz-transform: translateX(6px);
+    -ms-transform: translateX(6px);
+    -o-transform: translateX(6px);
+    transform: translateX(6px);
+}
+
+/* ------- Sections -------- */
+.iconItems{
+
+}
+.iconItems .item{
+    @apply md:col-span-1 py-0 mb-10
+}
+.iconItems .title{
+    @apply text-base mt-5 mb-3 font-semibold text-gray-700 
+}
+.iconItems .des{
+    color: #555 !important;
+@apply text-base italic text-gray-500   
+}
+
+.stepsBox{
+    @apply mt-12 px-5 md:grid md:grid-cols-2 md:gap-8
+}
+.stepsBox .item{
+  @apply md:col-span-1 pb-7 lg:px-5 lg:px-12 py-0 flex
+}
+.stepsBox .title{
+    @apply text-xl mt-5 mb-3 font-semibold text-gray-600 uppercase
+}
+.stepsBox .des{
+ @apply text-base italic text-gray-500   
+}
+.stepsBox .stepNum{
+    font-size: 2rem;
+    color: #333;
+    font-weight: bold;
+    border-left: 3px solid #ff4777;
+    height: 50px;
+    width: 50px;
+    padding: 20px 10px;
+    margin: 27px 39px;
+    line-height: 1px;
+
+}
+
+span.highlight {
+    font-weight: bolder;
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.896796218487395) 100%);
+
+    box-decoration-break: clone;
+    margin: 0;
+    border-radius: 7.5px;
+
+}
+
+/*----------- checkedList ----------*/
+.checkedListBig{
+
+}
+.checkedListBig li{
+    @apply text-xl my-5
+}
+
+.grecaptcha-badge { 
+    visibility: hidden;
+}
+/* ----------- sidebar ----------- */
+.user-sidebar{
+    min-width: 210px;
+    @apply py-8
+}
+.user-sidebar .menu-box{
+    @apply mb-7 
+}
+.user-sidebar .group-title{
+    @apply font-semibold text-base px-5 mb-2
+}
+.user-sidebar .list-menu{
+}
+
+.user-sidebar .list-menu .menu-item svg{
+    width: 20px!important;
+    height: 20px!important;
+    fill: #888;
+    margin: 2px 7px 0 0 ;
+}
+.user-sidebar .list-menu .menu-item a{
+    @apply py-3 px-6 block flex
+}
+.user-sidebar .list-menu .menu-item.active svg{
+    fill: var(--main-color);
+}
+.user-sidebar .list-menu .menu-item.active a{
+    color: var(--main-color);
+    transition: background-color 275ms ease;
+ 
+}
+.user-sidebar .list-menu .menu-item a:hover svg{
+    fill: #40a9ff;
+}
+
+.user-sidebar .list-menu .menu-item a:hover{
+    background-color: #f2f2f2;
+}
+/* ---------- User Nav ------------ */
+
+.circle-avatar {
+    width: 29px;
+    height: 29px;
+    margin: 5px 0 0 0;
+    display: inline-block;
+    border-radius: 50%;
+    border: 1px solid #eee;
+    text-align: center;
+    background-color: #eaeaea;
+    background-size: cover;
+    background-position: 50%;
+    background-image: url('/assets/avatar.png');
+}
+
+.user-logged-box{
+
+    @apply text-sm cursor-pointer relative
+ }
+  
+.user-logged-box:hover .user-menu-dropdown{
+    @apply opacity-100 block
+  }
+  
+.user-menu-dropdown{
+    position: absolute;
+    transition: opacity 0.2s ease;
+    opacity: 0;
+    display: none;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.96);
+    left: -30px;
+    min-width: 200px;
+    text-align: left;
+    -webkit-box-shadow: -1px 1px 20px 0px rgba(0,0,0,0.39); 
+    box-shadow: -1px 1px 20px 0px rgba(0,0,0,0.39);
+    @apply rounded
+}
+.user-menu-dropdown .menu-item a{
+    
+    border-bottom: 1px solid #f2f2f2;
+    @apply px-6 py-3 cursor-pointer block
+}
+.user-menu-dropdown .menu-item a:last-child{
+    border-bottom: none;
+}
+.user-menu-dropdown .menu-item svg{
+    fill: #999;
+    width: 19px;
+    height: 19px;
+    margin: -2px 10px 0 0 ;
+    display: inline-block;
+}
+.user-menu-dropdown .menu-item:hover a{
+    color: var(--main-color);
+}
+.user-menu-dropdown .menu-item:hover svg{
+    fill: var(--main-color);
+}
+.user-menu-dropdown .menu-item:hover a{
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.85);
+}
+.header-popover-arrow{
+    display: block;
+}
+.header-popover-arrow:after, 
+.header-popover-arrow:before {
+    display: block;
+    content: " ";
+    position: absolute;
+    left: inherit;
+    right: inherit;
+    width: 0;
+    height: 0;
+    border-width: 10px;
+    border-style: solid;
+}
+.header-popover-arrow:after{
+    top: -19px;
+    border-color: transparent transparent #fff;
+}
+.header-popover-arrow:before{
+    top: -20px;
+    border-color: transparent transparent rgba(0,0,0,.02);
+}
+.ant-input-number-input{
+    height: auto;
+    padding: 0;
+}
