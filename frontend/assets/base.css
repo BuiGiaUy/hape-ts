@@ -455,7 +455,12 @@ body.layout {
 
 .category-page {
 }
-.category-page .product-item {
+.category-page {
+  @apply bg-white py-3 px-3 mb-1 shadow;
+
+}
+
+.product-item {
   @apply bg-white py-3 px-3 mb-1 shadow;
 }
 @media screen and (max-width: 720px) {
