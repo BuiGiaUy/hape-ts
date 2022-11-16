@@ -1,7 +1,7 @@
 :root {
   --primary: #ffffff;
   --primary-2: #f1f3f5;
-  --main-color: #DB4140;
+  --main-color: #db4140;
   --secondary: #000000;
   --secondary-2: #111;
   --selection: var(--cyan);
@@ -31,11 +31,11 @@
   --accents-7: #495057;
   --accents-8: #343a40;
   --accents-9: #212529;
-  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue',
-    'Helvetica', sans-serif;
+  --font-sans: -apple-system, system-ui, BlinkMacSystemFont, "Helvetica Neue",
+    "Helvetica", sans-serif;
 }
 
-[data-theme='dark'] {
+[data-theme="dark"] {
   --primary: #000000;
   --primary-2: #111;
   --secondary: #ffffff;
@@ -71,7 +71,7 @@ html {
   height: 100%;
   box-sizing: border-box;
   touch-action: manipulation;
-  font-feature-settings: 'case' 1, 'rlig' 1, 'calt' 0;
+  font-feature-settings: "case" 1, "rlig" 1, "calt" 0;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -91,27 +91,31 @@ body {
   min-height: 100%;
   margin: 0;
 }
+ul {
+  list-style: none;
+  padding-left: 0;
+}
 
 a {
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
 /*-----------------ANIMATION --------*/
-a, button, input{
+a,
+button,
+input {
   transition: color 375ms ease;
   transition: background-url 275ms ease;
   transition: background-color 275ms ease;
   transition: border 275ms ease;
 }
 
-
-input:focus, 
+input:focus,
 input:focus-visible,
-button:focus, 
-button:focus-visible{
+button:focus,
+button:focus-visible {
   outline: none !important;
-  box-shadow: none!important;
+  box-shadow: none !important;
 }
-
 
 .animated {
   -webkit-animation-duration: 1s;
@@ -144,51 +148,51 @@ button:focus-visible{
     opacity: 1;
   }
 }
-body.layout{
+body.layout {
   background-image: linear-gradient(to top, white, #fff4ec);
   background-repeat: no-repeat;
 }
-.heading-red{
-  background-image: linear-gradient(100deg,rgb(61,61,61),rgb(255,77,99));
+.heading-red {
+  background-image: linear-gradient(100deg, rgb(61, 61, 61), rgb(255, 77, 99));
   background-clip: text;
   -webkit-text-fill-color: transparent;
   display: inline;
 }
-.currency{
+.currency {
   font-size: 0.75rem;
 }
-.navMenu{
+.navMenu {
   word-wrap: break-word;
-    overflow: hidden;
-    display: -webkit-box;
-    text-overflow: ellipsis;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 1;
+  overflow: hidden;
+  display: -webkit-box;
+  text-overflow: ellipsis;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
 }
-.navMenu > li{
+.navMenu > li {
   margin: 0;
   padding: 0px 0px 27px 0px;
   vertical-align: top;
   display: inline-block;
   position: static;
 }
-.navMenu li svg{
+.navMenu li svg {
   fill: #666;
   width: 19px;
   height: 19px;
   margin-top: 2px;
 }
-.navMenu li:hover svg{
-  fill: var(--main-color);  
+.navMenu li:hover svg {
+  fill: var(--main-color);
 }
-.navMenu li:hover > a{
+.navMenu li:hover > a {
   color: var(--main-color);
 }
 
 .navMenu > li:last-child::after {
   content: "";
 }
-.navMenu li > a{
+.navMenu li > a {
   position: relative;
 }
 .navMenu > li > a::after {
@@ -206,7 +210,6 @@ body.layout{
 .navMenu > li:hover > a::after {
   transform: scaleX(1);
 }
-
 
 .navMenu > li:hover .submenu {
   opacity: 1;
@@ -236,15 +239,15 @@ body.layout{
   visibility: visible;
   transform: translateY(0px) rotate(45deg);
 }
-.navMenu > li .submenu li img{
+.navMenu > li .submenu li img {
   max-width: 60px;
 }
-.navMenu > li .submenu li .title{
-    font-weight: bold;
-    padding: 10px 0;
-    color: #444;
+.navMenu > li .submenu li .title {
+  font-weight: bold;
+  padding: 10px 0;
+  color: #444;
 }
-.navMenu > li .submenu li:hover .title{
+.navMenu > li .submenu li:hover .title {
   color: #222;
 }
 .navMenu > li .submenu ul {
@@ -268,7 +271,7 @@ body.layout{
   border-radius: 3px;
 }
 
-.siteNavbar .button{
+.siteNavbar .button {
   font-size: 0.7rem;
   font-weight: bold;
   color: #fff;
@@ -276,10 +279,8 @@ body.layout{
   padding-right: 1rem;
 }
 
-
-.shadow-magical{
+.shadow-magical {
   background: rgba(255, 255, 255, 0.9);
-
 }
 .input-range__slider {
   top: -16px;
@@ -313,41 +314,41 @@ body.layout{
   display: block;
 }
 .input-range__label::after {
-    content: "";
-    position: absolute;
-    width: 0px;
-    height: 0px;
-    margin-left: 6px;
-    bottom: -3px;
-    left: 100%;
-    box-sizing: border-box;
-    border-width: 5px;
-    border-style: solid;
-    border-image: initial;
-    border-color: transparent transparent rgb(255, 255, 255) rgb(255, 255, 255);
-    transform-origin: 0px 0px;
-    transform: rotate(-45deg);
-    box-shadow: #ff980045 -3px 3px 3px 0px;
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  margin-left: 6px;
+  bottom: -3px;
+  left: 100%;
+  box-sizing: border-box;
+  border-width: 5px;
+  border-style: solid;
+  border-image: initial;
+  border-color: transparent transparent rgb(255, 255, 255) rgb(255, 255, 255);
+  transform-origin: 0px 0px;
+  transform: rotate(-45deg);
+  box-shadow: #ff980045 -3px 3px 3px 0px;
 }
 .input-range__label.input-range__label--min,
-.input-range__label.input-range__label--max{
+.input-range__label.input-range__label--max {
   display: none;
 }
 .input-range__track--active {
-  background: #fabf2ba6!important;
+  background: #fabf2ba6 !important;
   border-radius: unset;
 }
-.checkedList{
+.checkedList {
   list-style: inside;
 }
 .checkedList li:before {
-    background: transparent;
-    background-image: url(/page/black-check.png);
-    width: 14px;
-    height: 14px;
-    top: 7px;
+  background: transparent;
+  background-image: url(/page/black-check.png);
+  width: 14px;
+  height: 14px;
+  top: 7px;
 }
-.checkedList li{
+.checkedList li {
   display: list-item;
 }
 .headTitleTop::after {
@@ -356,20 +357,19 @@ body.layout{
   width: 50px;
   height: 1px;
   background-color: #2d2d2d;
-  opacity: .5;
+  opacity: 0.5;
   margin: 25px auto;
 }
-.headTitleTopLeft::after{
-
+.headTitleTopLeft::after {
   content: "";
   display: block;
   width: 50px;
   height: 2px;
   background-color: #2d2d2d;
-  opacity: .5;
+  opacity: 0.5;
   margin: 25px 0;
 }
-.facebook-login-btn{
+.facebook-login-btn {
   padding: 10px 20px;
   color: #3578e5;
   display: inline-flex;
@@ -381,12 +381,12 @@ body.layout{
   font-weight: 500;
   font-family: Roboto, sans-serif;
 }
-.facebook-login-btn i.fa::before{
+.facebook-login-btn i.fa::before {
   margin-right: 10px;
   color: #3578e5;
   font-size: 1.3rem;
 }
-.label{
+.label {
   display: inline-block;
   background: #f2f2f2;
   color: #333;
@@ -398,17 +398,16 @@ body.layout{
   width: auto;
   white-space: nowrap;
   margin-right: 12px;
-
 }
-.label-green{
+.label-green {
   color: #fff;
   background: #00bf7b;
 }
-.alignCenter{
+.alignCenter {
   align-items: center;
   display: flex;
 }
-.order-page .label{
+.order-page .label {
   display: inline-block;
   background: #f2f2f2;
   color: #333;
@@ -421,44 +420,43 @@ body.layout{
   white-space: nowrap;
   margin: 0;
 }
-.order-page .label-WAITING{
+.order-page .label-WAITING {
   background: #ffeac8;
 }
-.order-page .label-PROCESSING{
+.order-page .label-PROCESSING {
   background: #dff9b7;
 }
-.order-page .label-SHIPPING{
+.order-page .label-SHIPPING {
   background: #c8e0ff;
 }
-.order-page .label-SHIPPING_FAIL{
+.order-page .label-SHIPPING_FAIL {
   background: #ffa6a6;
 }
-.content-description{
-
+.content-description {
 }
-.content-description p{
- @apply mb-4
-
+.content-description p {
+  @apply mb-4;
 }
-.content-description li{
+.content-description li {
   margin-left: 5px;
 }
-.content-description img{
+.content-description img {
   clear: both;
   display: block;
   margin: 0 auto;
   margin-bottom: 20px;
   width: auto;
 }
-.content-description h4, .content-description h3, .content-description h2{
-  @apply font-bold mb-3
+.content-description h4,
+.content-description h3,
+.content-description h2 {
+  @apply font-bold mb-3;
 }
 
-.category-page{
-
+.category-page {
 }
-.category-page .product-item{
-  @apply bg-white py-3 px-3 mb-1 shadow
+.category-page .product-item {
+  @apply bg-white py-3 px-3 mb-1 shadow;
 }
 @media screen and (max-width: 720px) {
   #nprogress .spinner {
@@ -469,8 +467,8 @@ body.layout{
   font-weight: 700;
   margin-bottom: 10px;
 }
-.page-content{
-  @apply text-base
+.page-content {
+  @apply text-base;
 }
 .info-content table tr {
   border: 1px solid #e2e3e5;

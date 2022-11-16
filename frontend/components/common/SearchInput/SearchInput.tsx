@@ -31,7 +31,7 @@ const SearchInput: React.FC = () => {
             onChange={(e) => handleSearchChange(e)}
           />
         </div>
-        <div className="flex-none w-10">
+        <div className="flex-none w-10 ">
           <button type="button" onClick={gotoSearchPage}>
             <BiSearch />
           </button>

@@ -1,0 +1,54 @@
+
+.footer{
+  border-top: 1px solid #f1f1f1;
+  @apply bg-white mt-10
+}
+.copyright{
+  border-top: 1px solid #f1f1f1;
+  font-size: 0.8rem;
+  @apply py-5 mx-5 flex flex-col text-gray-500 text-center
+  md:flex-row justify-center 
+  items-center space-y-4
+}
+.iconSocial{
+  @apply flex justify-end
+}
+.iconSocial a{
+  @apply flex mr-5
+}
+.iconSocial svg{
+  fill: #444;
+  @apply h-7 w-7 flex
+}
+.iconSocial a:hover svg{
+  fill: var(--main-color);
+  transition: fill .4s ease;
+}
+.partnerIcons{
+  @apply mb-5 mr-10 
+}
+.partnerIcons img{
+   max-height: 22px;
+  @apply mr-8 mb-5 inline-block
+}
+.footer button{
+}
+.menu{
+  font-size: 0.8rem;
+
+  @apply py-2 md:py-0 md:pb-4
+
+}
+
+.menu a{
+  color: #555;
+}
+.menu a:hover{
+  color: var(--main-color);
+}
+
+.title{
+  font-size: 0.8rem;
+  @apply uppercase  font-bold tracking-wide mb-4 text-gray-600
+
+}

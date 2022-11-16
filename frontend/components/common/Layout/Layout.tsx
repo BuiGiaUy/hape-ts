@@ -3,6 +3,7 @@ import React, { FC } from "react";
 import { useUI } from "./../../ui/context";
 import config from "../../../config/seo.json";
 import Navbar from "../Navbar/Navbar";
+import Footer from "../Footer/Footer";
 type Props = {
   children: any;
   hideHeader?: boolean;
@@ -19,6 +20,7 @@ const Layout: FC<Props> = ({ children, hideHeader }) => {
         <Navbar hideHeader={hideHeader} darkMode={darkMode} />
       </header>
       {children}
+      <Footer />
     </div>
   );
 };
