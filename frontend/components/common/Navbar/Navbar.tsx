@@ -29,27 +29,27 @@ const Navbar: FC<Props> = ({ darkMode, hideHeader }) => {
               <div className="col-span-6 md:block ">
                 <ul className="navMenu mt-3 ml-10 space-x-5">
                   <li>
-                    <Link href="" className={s.link}>
+                    <Link href="/c/Thực-phẩm-và-đồ-uống.200647" className={s.link}>
                       Hữu cơ
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className={s.link}>
+                    <Link href="/c/Thực-phẩm-đóng-hộp.200801" className={s.link}>
                       Đồ khô & hộp
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className={s.link}>
+                    <Link href="/c/Kẹo.200785" className={s.link}>
                       Bánh kẹo & Uống{" "}
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className={s.link}>
+                    <Link href="/c/Gia-vị-Hương-liệu.200804" className={s.link}>
                       Nguyên liệu & gia vị
                     </Link>
                   </li>
                   <li>
-                    <Link href="" className={s.link}>
+                    <Link href="/c/Đông-Lạnh.200802" className={s.link}>
                       Đông lạnh
                     </Link>
                   </li>
