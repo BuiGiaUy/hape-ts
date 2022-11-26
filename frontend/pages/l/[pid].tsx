@@ -32,8 +32,8 @@ class Product extends Component {
   }
 }
 Product.getInitialProps = async (context) => {
+  const { pid } = context.query;
   try {
-    var { pid } = context.query;
     const { product, found, related } = await pullProduct(extractID(pid));
     if (found) {
       const pathUrl = getProductUrl(product);

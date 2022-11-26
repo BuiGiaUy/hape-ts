@@ -1,0 +1,13 @@
+.root{
+    min-height: 50rem;
+    @apply mx-auto max-w-7xl my-10
+}
+.sidebar{
+   
+}
+.productList{
+    @apply mx-3 grid grid-cols-2 md:grid-cols-6 gap-3 mb-10
+}
+.pageTitle{
+    @apply text-3xl font-semibold tracking-normal mb-10 text-center
+}

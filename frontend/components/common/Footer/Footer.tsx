@@ -35,7 +35,7 @@ const Footer: React.FC = () => {
             <h3 className={s.title}>về HAPE</h3>
             <ul className="flex flex-initial flex-col md:flex-1">
               <li className={s.menu}>
-                <Link href="/page/gioi-thieu">Giới thiệu HAPE</Link>
+                <Link href="/page/about-us">Giới thiệu HAPE</Link>
               </li>
               <li className={s.menu}>
               
@@ -52,7 +52,7 @@ const Footer: React.FC = () => {
               <img src="/assets/payments/visa.png" width="50px"/>
               <img src="/assets/payments/american-express.png" width="60px"/>
               <img src="/assets/payments/jcb.png" />
-              <img src="/assets/payments/mastercard.png" />
+              <img src="/assets/payments/mastercard.svg" />
               <img src="/assets/payments/momo.png" />
               <img src="/assets/payments/vnpay.png" />
             </div>
@@ -61,7 +61,7 @@ const Footer: React.FC = () => {
               <img src="/assets/shippings/ghn.png" width="50px"/>
               <img src="/assets/shippings/ghtk.png" />
               <img src="/assets/shippings/jt.svg" width="60px"/>
-              <img src="/assets/shippings/grap.png" />
+              <img src="/assets/shippings/grab.png" />
               <img src="/assets/shippings/viettel_post.png" />
             </div>
           </div>

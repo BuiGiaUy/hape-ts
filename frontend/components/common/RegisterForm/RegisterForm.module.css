@@ -1,10 +1,55 @@
+.h1 {
+  @apply text-4xl font-bold mb-10 uppercase text-gray-700;
+}
+.label {
+  font-size: 0.8rem !important;
+  @apply block text-xs font-bold mb-2 text-gray-700;
+}
+.alert {
+  color: var(--main-color);
+  @apply text-xs pt-1;
+}
+.input {
+  width: 100%;
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.14);
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 0 0 rgb(0 0 0 / 2%);
+  color: #222;
+  height: 40px;
+  padding: 10px;
+  -webkit-transition: border-color 0.1s ease;
+  transition: border-color 0.3s ease;
+  @apply mr-3 px-3 py-2 bg-white text-sm 
+     focus:outline-none focus:ring ease-linear 
+     transition-all duration-150;
+}
+.input:hover {
+  border: 1px solid #999;
+  transition: border-color 0.2s ease;
+}
+.button {
+    border:none;
+  color: #fff !important;
+  background: var(--main-color);
+  @apply text-xs font-semibold hover:text-white items-center justify-center text-white 
+ uppercase px-7 py-3 shadow-md  hover:shadow-lg outline-none transition-all duration-150;
+}
 .signUpButton {
-    transition: border-color .3s ease;
-    margin-left: 12px;
-    margin-top: 6px;
-
-    @apply mt-1 w-12 md:w-auto text-xs rounded-2xl md:px-4 py-2 font-bold hidden md:inline-block border-none bg-transparent
+  transition: border-color 0.3s ease;
+  @apply mt-1 w-12 md:w-auto  text-xs rounded-2xl  md:px-4 py-2 font-bold hidden md:inline-block;
 }
 .signUpButton:hover {
-    @apply bg-gray-100 
+  @apply bg-gray-100;
+}
+.formBox {
+  @apply shadow sm:px-16 sm:py-12 px-5 py-5 mx-5 my-10 bg-white;
+}
+.checkbox {
+  margin-top: 6px;
+  min-width: 16px;
+  @apply h-5 w-5 text-gray-600 lg:col-span-1;
+}
+.formMessage {
+  @apply text-sm text-red mb-5;
 }
