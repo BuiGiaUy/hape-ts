@@ -2,7 +2,7 @@ import dynamic from "next/dynamic";
 import React from "react";
 import s from "./UserNav.module.css";
 import cn from "classnames";
-import CartBox from "../CartBox.module.css/CartBox";
+import CartBox from "../CartBox/CartBox";
 type Props = {
   className?: string;
 };

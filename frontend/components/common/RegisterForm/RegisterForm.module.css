@@ -36,6 +36,8 @@
  uppercase px-7 py-3 shadow-md  hover:shadow-lg outline-none transition-all duration-150;
 }
 .signUpButton {
+  
+  border: none;
   transition: border-color 0.3s ease;
   @apply mt-1 w-12 md:w-auto  text-xs rounded-2xl  md:px-4 py-2 font-bold hidden md:inline-block;
 }
