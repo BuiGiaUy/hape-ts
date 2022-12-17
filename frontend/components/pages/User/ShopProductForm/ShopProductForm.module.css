@@ -1,0 +1,118 @@
+.h1{
+    @apply text-2xl font-bold uppercase text-gray-700
+}
+.label {
+    font-size: 0.8rem!important;
+    @apply block uppercase text-xs font-bold mb-2 ml-1 text-gray-700
+  }
+.labelRow{
+      min-width: 200px;
+      margin-top: 12px;
+      font-size: 0.8rem!important;
+      @apply block  text-xs font-bold mb-2 ml-1 text-gray-700
+  }
+.labelRow span {
+    @apply text-gray-500 text-xs font-normal block
+} 
+.inputRow{
+    min-width: 55%;
+}
+.dropdownBox{
+    border: 1px solid #f2f2f2; 
+    max-height: 300px;
+    overflow-y: auto;
+    @apply absolute bg-white w-full shadow-lg z-10
+}
+.dropdownItem{
+    border-bottom: 1px solid #f2f2f2;
+    @apply px-4 py-2
+}
+.dropdownItem:hover {
+    background: #f2f2f2;
+    @apply cursor-pointer
+}
+.input {
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.14);
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 0 0 rgb(0 0 0 / 2%);
+    color: #222;
+    height: 40px;
+    padding: 10px;
+    -webkit-transition: border-color .1s ease;
+    transition: border-color .1s ease;
+    @apply  mr-3 px-3 py-2 bg-white text-sm 
+     focus:outline-none focus:ring ease-linear 
+     transition-all duration-150
+}   
+.categoryInput {
+    width: 100%;
+    border-radius: 2px;
+    border: 1px solid rgba(0,0,0,.14);
+    box-sizing: border-box;
+    box-shadow: inset 0 2px 0 0 rgb(0 0 0 / 2%);
+    color: #222;
+    height: 40px;
+    padding: 10px;
+    -webkit-transition: border-color .1s ease;
+    transition: border-color .1s ease;
+    @apply flex  self-center   mr-3 px-3 py-2 bg-white text-sm 
+     focus:outline-none focus:ring ease-linear 
+     transition-all duration-150
+}  
+.categoryParent {
+ @apply text-gray-600
+}
+.categoryInput:hover {
+    border: 1px solid #888;
+    transition: border-color .3s ease;
+}
+.categoryInput svg{
+    color: #888;
+    @apply flex w-5 h-5 
+}
+.categoryInput input{
+    width: calc(100% - 70px);
+
+    @apply flex py-1 self-center  ml-3
+}
+.iconLink{
+    color: #888;
+    @apply font-semibold text-sm
+}
+
+.button{
+    color: #fff!important;
+    background: var(--main-color)!important;
+  @apply inline ml-5 hover:text-white tracking-wide items-center justify-center text-white text-sm font-bold uppercase px-5 py-2 shadow hover:shadow-lg outline-none focus:outline-none ease-linear transition-all duration-150 
+ 
+}
+.categoryClose{
+    margin: 2px 0 0 0;
+    @apply cursor-pointer w-6 h-6
+}
+.iconAction{
+    @apply ml-7 mr-3 
+}
+.iconAction svg{
+    fill: #444;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+}
+.iconAction:hover svg{
+     fill: var(--main-color)!important;
+     cursor: pointer;
+}
+.button svg {
+ width: 20px;
+ height: 20px;
+}
+.formBox{
+    @apply shadow px-8 py-6 bg-white
+}
+.formMessage{
+    @apply text-sm text-red mb-5
+
+}

@@ -1,0 +1,26 @@
+.h1{
+    @apply text-2xl font-bold mb-7 uppercase text-gray-700
+}
+.formBox{
+    @apply shadow px-6 py-5 bg-white
+}
+.button{
+    color: #fff!important;
+    background: var(--main-color)!important;
+  @apply flex hover:text-white tracking-wide items-center justify-center text-white text-sm font-bold uppercase px-7 py-3 shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150
+ 
+}
+.addButtonSvg{
+    margin: -2px 2px 0 0;
+    width: 20px!important;
+    height: 20px!important;
+    @apply inline 
+}
+
+.productName {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-width: 200px;
+    display: block;
+  }
